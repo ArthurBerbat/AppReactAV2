@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View } from "react-native";
+import {Dados} from './Dados';
+import { StyleSheet } from "react-native";
 
-export default function App() {
+export default function Jogo(){
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.MainContainer}>
+      <Dados texto= "Tente a sorte!!"/>
     </View>
-  );
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
+const styles = StyleSheet.create(
+  {
+  MainContainer: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+//    backgroundColor: '#fff',
+
     justifyContent: 'center',
+    alignItems: 'center',
   },
 });
